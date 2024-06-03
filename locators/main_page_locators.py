@@ -1,0 +1,10 @@
+main_url = 'https://stellarburgers.nomoreparties.site'  # адрес главной страницы
+main_login_button_xpath = './/button[@class="button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg"]'  # путь до кнопки "Войти в аккаунт"
+main_account_link_xpath = './/p[text()="Личный Кабинет"]'  # путь до кнопки "Личный кабинет"
+main_constructor_link_xpath = './/p[text()="Конструктор"]'  # путь до кнопки "Конструктор"
+main_bun_span_xpath = '//span[text()="Булки"]'  # путь до кнопки навигации "Булки"
+main_bun_span_selected_xpath = '//span[text()="Булки"]/parent::div[@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]'  # путь отображения выбранной кнопки навигации "Булки"
+main_sauce_span_xpath = '//span[text()="Соусы"]'  # путь до кнопки навигации "Соусы"
+main_sauce_span_selected_xpath = '//span[text()="Соусы"]/parent::div[@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]'  # путь отображения выбранной кнопки навигации "Соусы"
+main_filling_span_xpath = '//span[text()="Начинки"]'  # путь до кнопки навигации "Начинки"
+main_filling_span_selected_xpath = '//span[text()="Начинки"]/parent::div[@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]'  # путь отображения выбранной кнопки навигации "Начинки"
