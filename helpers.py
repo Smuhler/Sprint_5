@@ -2,6 +2,7 @@ from conftest import *
 from locators.account_page_locators import *
 from locators.main_page_locators import *
 from locators.login_page_locators import *
+from locators.register_page_locators import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
@@ -48,7 +49,7 @@ class Unauthorized:
 
     @staticmethod
     def click_footer_login_link(driver):  # Нажатие на ссылку "Войти"
-        driver.find_element(By.LINK_TEXT, 'Войти').click()
+        driver.find_element(By.XPATH, register_login_link_xpath).click()
         WebDriverWait(driver, 3).until(
             expected_conditions.visibility_of_element_located((By.XPATH, login_header_xpath)))
 
@@ -59,7 +60,7 @@ class Authorized:
     def click_account_link(driver):  # Нажатие на кнопку "Личный кабинет"
         driver.find_element(By.XPATH, main_account_link_xpath).click()
         WebDriverWait(driver, 3).until(
-            expected_conditions.visibility_of_element_located((By.LINK_TEXT, 'Профиль')))
+            expected_conditions.visibility_of_element_located((By.XPATH, account_profile_link_xpath)))
 
     @staticmethod
     def click_constructor_link(driver):  # Нажатие на кнопку "Конструктор"

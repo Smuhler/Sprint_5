@@ -5,3 +5,4 @@ register_password_input_xpath = './/label[text()="Пароль"]/parent::div/inp
 register_button_xpath = './/button[text()="Зарегистрироваться"]'  # путь до кнопки регистрации
 register_incorrect_password_text_xpath = './/label[text()="Пароль"]/parent::div/parent::div/p'  # путь до текста ошибки "Некорректный пароль"
 register_password_div_xpath = './/label[text()="Пароль"]/parent::div'  # путь до блока ввода пароля
+register_login_link_xpath = './/a[text()="Войти"]'  # путь до ссылки "Профиль"
