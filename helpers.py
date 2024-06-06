@@ -5,6 +5,23 @@ from locators.login_page_locators import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
+import random
+
+
+class Register:
+
+    @staticmethod
+    def create_login():  # Генератор логина
+        i = random.randint(1000, 9999)
+        return f'alexeyvolkov9{i}@yandex.ru'
+
+    @staticmethod
+    def create_password():  # Генератор пароля
+        return f'{random.randint(100000, 9999999)}'
+
+    @staticmethod
+    def incorrect_password():  # Генератор некорректного пароля
+        return f'{random.randint(1, 99999)}'
 
 
 class Unauthorized:
