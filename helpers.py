@@ -69,6 +69,12 @@ class Authorized:
             expected_conditions.visibility_of_element_located((By.XPATH, main_login_button_xpath)))
 
     @staticmethod
+    def click_logo(driver):  # Нажатие на logo
+        driver.find_element(By.XPATH, main_logo_xpath).click()
+        WebDriverWait(driver, 3).until(
+            expected_conditions.visibility_of_element_located((By.XPATH, main_login_button_xpath)))
+
+    @staticmethod
     def click_logout_button(driver):  # Нажатие на кнопку "Выход"
         driver.find_element(By.XPATH, account_logout_button_xpath).click()
         WebDriverWait(driver, 3).until(
